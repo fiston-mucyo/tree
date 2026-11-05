@@ -1,0 +1,111 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #101014;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background: #08080b;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: #e50914;
+}
+
+a {
+    color: white;
+    margin: 10px;
+}
+
+main {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.panel, .box, .media-card {
+    background: #1b1b22;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.auth {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.box {
+    width: min(430px, 100%);
+}
+
+label {
+    display: block;
+    margin: 12px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    background: #111;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+button {
+    background: #e50914;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.danger {
+    background: #8d2026;
+}
+
+.media-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-bottom: 1px solid #444;
+    flex-wrap: wrap;
+}
+
+.media-card video {
+    max-height: 400px;
+    background: black;
+}
+
+.media-card audio {
+    width: 100%;
+}
+
+.error {
+    color: #ff7777;
+}
+
+@media(max-width:600px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
